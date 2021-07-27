@@ -6,21 +6,28 @@ import {RouterModule} from "@angular/router";
 import { UsersComponent } from './components/users/users.component';
 import { PostsComponent } from './components/posts/posts.component';
 import {HttpClientModule} from "@angular/common/http";
+import {routes} from "./routes/basic.routes";
+import { UserComponent } from './components/user/user.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { PostComponent } from './components/post/post.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    PostsComponent
+    PostsComponent,
+    UserComponent,
+    UserDetailsComponent,
+    PostComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {path:'users', component: UsersComponent},
-      {path: 'posts', component: PostsComponent}
-    ])
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
