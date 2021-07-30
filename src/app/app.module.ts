@@ -12,6 +12,7 @@ import { UserComponent } from './components/user/user.component';
 import { PostComponent } from './components/post/post.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
+import { PostsOfUserComponent } from './components/posts-of-user/posts-of-user.component';
 
 
 
@@ -25,6 +26,7 @@ import { PostDetailsComponent } from './components/post-details/post-details.com
     PostComponent,
     UserDetailsComponent,
     PostDetailsComponent,
+    PostsOfUserComponent,
 
   ],
   imports: [

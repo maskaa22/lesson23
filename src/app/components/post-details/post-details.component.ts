@@ -15,7 +15,7 @@ export class PostDetailsComponent implements OnInit {
       this.postService.getPostById(id).subscribe(value => this.post=value)
     })
   }
-//todo
+
   ngOnInit(): void {
   }
 
